@@ -71,7 +71,7 @@ Add Wallaby to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
-  [{:wallaby, "~> 0.20.0", [runtime: false, only: :test]}]
+  [{:wallaby, "~> 0.22.0", [runtime: false, only: :test]}]
 end
 ```
 
@@ -540,7 +540,6 @@ sent along on every request. This can be controlled with the `:hackney_options`
 setting in `config.exs`.
 
 ```elixir
-# default values
 config :wallaby,
   hackney_options: [timeout: :infinity, recv_timeout: :infinity]
 
